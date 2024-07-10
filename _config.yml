@@ -1,1 +1,8 @@
 judul: Template Jekyll
+source: src
+
+barang:
+  - nama: 1. Canva Pro
+    link: https://s.shopee.co.id/6fMobfN6c2
+  - nama: 2. Canva Pro
+    link: https://s.shopee.co.id/6fMobfN6c2
