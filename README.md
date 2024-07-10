@@ -4,6 +4,10 @@
 
 Klik tombol hijau bertuliskan `Use this template` di bagian kanan atas.
 
+## Tampilan Website
+
+Silahkan buka <https://template-shopee.github.io/>
+
 ## Support Me
 
 Kalau kamu suka dengan template Jekyll ini, jangan lupa support aku dengan klik tombol di bawah ini ya...
