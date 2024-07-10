@@ -8,6 +8,10 @@ Klik tombol hijau bertuliskan `Use this template` di bagian kanan atas.
 
 Silahkan buka <https://template-shopee.github.io/>
 
+## Mengedit
+
+Silahkan buka file `_config.yml`, lalu ikuti pengisian di bagian `barang` mengikuti format di atasnya.
+
 ## Support Me
 
 Kalau kamu suka dengan template Jekyll ini, jangan lupa support aku dengan klik tombol di bawah ini ya...
