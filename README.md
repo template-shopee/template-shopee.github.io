@@ -1,5 +1,9 @@
 # Template Shopee
 
+## Menggunakan Template Ini
+
+Klik tombol hijau bertuliskan `Use this template` di bagian kanan atas.
+
 ## Support Me
 
 Kalau kamu suka dengan template Jekyll ini, jangan lupa support aku dengan klik tombol di bawah ini ya...

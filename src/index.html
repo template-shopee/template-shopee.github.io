@@ -9,26 +9,46 @@
     <title>{{ site.judul }}</title>
     <link href="aset/bootstrap.min.css" rel="stylesheet" />
     <link href="uno.css" rel="stylesheet" />
+    <script src="aset/alpine.js" defer></script>
   </head>
   <body>
-    <div class="container py-3 space-y-3">
+    <div
+      class="container py-3 space-y-3"
+      x-init="barangTerfilter = barang; $watch('etalase', value => {
+        barangTerfilter = barang.filter(x => x.nama.includes(value))
+      })"
+      x-data="{
+        etalase: '',
+        barang: [
+          {% for barang in site.barang %}
+            {
+              nama: '{{ barang.nama }}',
+              link: '{{ barang.link }}'
+            },
+          {% endfor %}
+        ],
+        barangTerfilter: []
+      }"
+    >
       <h1 class="text-center text-2xl uppercase">{{ site.judul }}</h1>
       <input
+        x-model="etalase"
         type="tel"
-        class="form-control"
+        class="form-control sticky top-3 left-0 z-[99]"
         placeholder="Etalase nomor?"
         name=""
         value=""
       />
-      {% if site.barang %}
-      <div class="list-group">
-        {% for barang in site.barang %}
-        <a href="{{ barang.link }}" target="_blank" class="list-group-item"
-          >{{ barang.nama }}</a
-        >
-        {% endfor %}
+      <div x-show="barang" class="list-group">
+        <template x-for="b in barangTerfilter">
+          <a
+            x-text="b.nama"
+            :href="b.link"
+            target="_blank"
+            class="list-group-item"
+          ></a>
+        </template>
       </div>
-      {% endif %}
     </div>
   </body>
 </html>

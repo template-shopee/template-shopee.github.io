@@ -18,7 +18,12 @@
 .container{max-width:1536px;}
 }
 /* layer: default */
+.sticky{position:sticky;}
+.left-0{left:0;}
+.top-3{top:0.75rem;}
+.z-\[99\]{z-index:99;}
 .space-y-3>:not([hidden])~:not([hidden]){--un-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--un-space-y-reverse)));margin-bottom:calc(0.75rem * var(--un-space-y-reverse));}
+.b{border-width:1px;}
 .py-3{padding-top:0.75rem;padding-bottom:0.75rem;}
 .text-center{text-align:center;}
 .text-2xl{font-size:1.5rem;line-height:2rem;}
